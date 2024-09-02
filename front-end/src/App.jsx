@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LoginRegister from './components/LoginRegister/LoginRegister'; // Your login component
 import Viewer from './components/Viewer/Viewer'; // Viewer component
+import BusList from './components/BusList/BusList';
 import Search
  from './components/search/search';// Corrected component name
 

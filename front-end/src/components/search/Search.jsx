@@ -1,6 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './search.css';
+import BusList from '../BusList/BusList';
+
+const navigate = useNavigate();
+const handleClick = () => {
+  navigate('/BusList'); // Redirect to the "About" page
+};
 
 function Search() {
   return (
@@ -23,16 +29,10 @@ function Search() {
           <input type="text" id="to" placeholder="" />
         </div>
 
-        <button className="search-button">Search For Bus</button>
+        <button onClick={handleClick} className="search-button">Search For Bus</button>
       </div>
 
-      <footer>
-        <img 
-          src="https://upload.wikimedia.org/wikipedia/commons/8/8d/School_bus.jpg" 
-          alt="Bus" 
-          className="bus-image"
-        />
-      </footer>
+      
     </div>
   );
 }
