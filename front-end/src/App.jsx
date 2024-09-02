@@ -13,6 +13,7 @@ const App = () => {
         <Route path="/" element={<Viewer />} />
         <Route path="/LoginRegister" element={<LoginRegister />} />
         <Route path="/search" element={<Search />} /> {/* Corrected component name */}
+        <Route path='/BusList' element={<BusList/>}/>
       </Routes>
     </Router>
   );
