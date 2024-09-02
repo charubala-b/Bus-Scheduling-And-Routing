@@ -6,12 +6,16 @@ const Viewer = () => {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate('/');
+    navigate('/LoginRegister');
   };
 
   const handleClick = () => {
     navigate('/search'); // Redirect to the "About" page
   };
+  const handleGovernmentClick = () => {
+    navigate('/schedule'); // Navigates to the Schedule page
+  };
+  
 
   return (
     <div className="viewer-container">
@@ -19,7 +23,7 @@ const Viewer = () => {
         <h2>Select Your Role</h2>
         <button onClick={handleClick} className="role-option">User</button>
         <button className="role-option">Admin</button>
-        <button className="role-option">Government</button>
+        <button className="role-option" onClick={handleGovernmentClick}>Government</button>
         <button className="back-button" onClick={handleBack}>Back to Login</button>
       </div>
     </div>

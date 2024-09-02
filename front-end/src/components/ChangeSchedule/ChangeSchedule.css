@@ -1,0 +1,77 @@
+.change-schedule-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('/path-to-your-background-image.jpg') no-repeat center center/cover;
+}
+
+.change-schedule-box {
+    background-color: rgba(173, 216, 230, 0.7); 
+    background: transparent;
+    border-radius: 16px; /* Slightly more curved corners */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Lighter shadow for a softer effect */
+    backdrop-filter: blur(8px); /* Adds a blur effect to the background */
+    text-align: center;
+    width: 400px; /* Increased width */
+    height: 500px; /* Increased height */
+    padding: 30px; /* Padding for better spacing inside the box */
+}
+
+h1 {
+    color: #180f0f;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: calc(100% - 20px); /* Adjusted width to fit within the box */
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #b5dff0; /* Sky blue background for inputs */
+    color: #211212; /* White text */
+    margin-left: 10px; /* Margin from the left */
+}
+
+.update-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    width: calc(100% - 20px); /* Decreased width for the button */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.notification {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 120%;
+    /* Light background for the floating notification */
+    color: #28a745; /* Green text for success notification */
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow for the notification */
+    z-index: 100; /* Ensures it's above other elements */
+    opacity: 1; /* Fully visible initially */
+    transition: opacity 0.5s ease-out; /* Smooth transition for fade-out */
+}
+.hidden {
+    opacity: 0; /* Make notification invisible */
+    transition: opacity 0.5s ease-out; /* Smooth transition for fade-out */
+}

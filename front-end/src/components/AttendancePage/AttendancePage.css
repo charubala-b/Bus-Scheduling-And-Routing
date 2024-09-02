@@ -1,0 +1,73 @@
+.attendance-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+    background-color: #6ca3c8;
+    background: transparent;
+    box-shadow: 0px 4px 12px rgba(234, 9, 9, 0.1); /* Lighter shadow for a softer effect */
+    backdrop-filter: blur(8px); 
+    width: 500px;;
+    border-color: black; 
+    box-shadow: black;/* Light blue background */
+    position: relative;
+  }
+  
+  .Back-button {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: #87CEEB;  /* Sky blue background */
+    color: #1f0e0e; /* White text */
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width:15%;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+  }
+  
+  .Back-button:hover {
+    background-color: #00BFFF; /* Slightly darker blue on hover */
+  }
+  
+  .camera-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(222, 226, 208); /* Sky blue with transparency */
+    border-radius: 16px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  video {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 400px; /* Increased width */
+    height: 240px; /* Decreased height */
+  }
+  
+  .take-picture-button,
+  .done-button {
+    background-color: #87CEEB; /* Sky blue background */
+    color: #1c0c0c; /* White text */
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+  }
+  
+  .take-picture-button:hover,
+  .done-button:hover {
+    background-color: #00BFFF; /* Slightly darker blue on hover */
+  }
+  
