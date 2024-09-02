@@ -10,7 +10,8 @@ const busSchema = new Schema({
     latitude: { type: Number, required: true },
     longitude: { type: Number, required: true }
   },
-  lastUpdated: { type: Date, default: Date.now }
+  lastUpdated: { type: Date, default: Date.now },
+  price:{type:Number,required:true}
 });
 
 // DriverSchema

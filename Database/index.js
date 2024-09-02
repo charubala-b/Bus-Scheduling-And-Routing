@@ -63,7 +63,8 @@ app.post('/add-Bus', async function(request, response) {
                 "latitude": request.body.latitude,
                 "longitude": request.body.longitude
             },
-            "lastUpdated": request.body.lastUpdated
+            "lastUpdated": request.body.lastUpdated,
+            "price":request.body.price
         });
         response.status(200).json({ "status": "inserted successfully" });
     } catch (error) {
