@@ -7,10 +7,11 @@ const busSchema = new Schema({
   capacity: { type: Number, required: true },
   status: { type: String, enum: ['Active', 'Inactive', 'Maintenance'], default: 'Active' },
   location: {
-    latitude: { type: Number, required: true },
-    longitude: { type: Number, required: true }
+    from: { type: String, required: true },
+    to: { type: String, required: true }
   },
-  lastUpdated: { type: Date, default: Date.now }
+  lastUpdated: { type: Date, default: Date.now },
+  price:{type:Number,required:true}
 });
 
 // DriverSchema

@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+  }
+  
+  .container {
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-left:150%;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ff4500;
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #ff4500;
+  }
+  
+  .bus-summary {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .bus-time, .bus-route {
+    text-align: left;
+  }
+  
+  .time {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .arrow {
+    margin: 0 5px;
+  }
+  
+  .location {
+    display: block;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #ff4500;
+  }
+  
+  .bus-details {
+    margin-top: 20px;
+    background-color: #ffeb99;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .live-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .live-indicator {
+    background-color: #000;
+    color: #ffd700;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .bus-number {
+    background-color: #ff4500;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .crowd-info {
+    margin-bottom: 15px;
+  }
+  
+  .crowd-status {
+    display: flex;
+    justify-content: space-between;
+    color: #ff4500;
+    font-weight: bold;
+  }
+  
+  .remaining-seats {
+    background-color: #f2f2f2;
+    color: #ff4500;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .map {
+    margin-bottom: 20px;
+  }
+  
+  .map-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .tracking-button {
+    background-color: #ff6961;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .tracking-button:hover {
+    background-color: #ff5c5c;
+  }
+  

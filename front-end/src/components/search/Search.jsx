@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './search.css';
 
 function Search() {
+  const [from, setFrom] = useState('');
+  const [to, setTo] = useState('');
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    // Redirect to BusList and send 'from' and 'to' values
+    navigate('/BusList', { state: { from, to } });
+  };
+
   return (
     <div className="container">
       <header>
@@ -15,24 +24,28 @@ function Search() {
         
         <div className="form-group">
           <label htmlFor="from">From</label>
-          <input type="text" id="from" placeholder="" />
+          <input 
+            type="text" 
+            id="from" 
+            value={from} 
+            onChange={(e) => setFrom(e.target.value)} 
+            placeholder="Enter starting point" 
+          />
         </div>
 
         <div className="form-group">
           <label htmlFor="to">To</label>
-          <input type="text" id="to" placeholder="" />
+          <input 
+            type="text" 
+            id="to" 
+            value={to} 
+            onChange={(e) => setTo(e.target.value)} 
+            placeholder="Enter destination" 
+          />
         </div>
 
-        <button className="search-button">Search For Bus</button>
+        <button onClick={handleClick} className="search-button">Search For Bus</button>
       </div>
-
-      <footer>
-        <img 
-          src="https://upload.wikimedia.org/wikipedia/commons/8/8d/School_bus.jpg" 
-          alt="Bus" 
-          className="bus-image"
-        />
-      </footer>
     </div>
   );
 }
