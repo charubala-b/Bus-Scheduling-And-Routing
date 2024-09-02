@@ -60,8 +60,8 @@ app.post('/add-Bus', async function(request, response) {
             "capacity": request.body.capacity,
             "status": request.body.status,
             "location": {
-                "latitude": request.body.latitude,
-                "longitude": request.body.longitude
+                "from": request.body.from,
+                "to": request.body.to
             },
             "lastUpdated": request.body.lastUpdated,
             "price":request.body.price
@@ -102,10 +102,10 @@ app.patch('/update-Bus/:id', async function(request, response) {
         if (request.body.status !== undefined) {
             updateData.status = request.body.status;
         }
-        if (request.body.latitude !== undefined && request.body.longitude !== undefined) {
+        if (request.body.from !== undefined && request.body.to !== undefined) {
             updateData.location = {
-                latitude: request.body.latitude,
-                longitude: request.body.longitude
+                from: request.body.from,
+                to: request.body.to
             };
         }
         if (request.body.lastUpdated !== undefined) {
