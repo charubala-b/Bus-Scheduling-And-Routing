@@ -67,7 +67,7 @@ function BusList() {
 
       <footer>
         <img 
-          src="https://upload.wikimedia.org/wikipedia/commons/8/8d/School_bus.jpg" 
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxYE-CNz1vgw7_nvRpI-mKSBVq9EIRrzfQJA&s" 
           alt="Bus"
           className="bus-image"
         />

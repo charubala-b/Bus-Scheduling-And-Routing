@@ -6,11 +6,9 @@ import Search from './components/search/Search';
 import Schedule from './components/Schedule/Schedule';
 import ChangeSchedule from './components/ChangeSchedule/ChangeSchedule'; // Import the ChangeSchedule component
 import AttendancePage from './components/AttendancePage/AttendancePage'; // Import the Attendance component
-
-import LoginRegister from './components/LoginRegister/LoginRegister'; // Your login component
-import Viewer from './components/Viewer/Viewer'; // Viewer component
+ // Viewer component
 import BusList from './components/BusList/BusList';
-import Search from './components/search/Search';// Corrected component name
+// Corrected component name
 
 
 const App = () => {

@@ -1,115 +1,120 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-  }
-  
-  .container {
-    width: 350px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin-left: 140%;
-  }
-  
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #ff4500;
-  }
-  
-  .menu-icon {
-    font-size: 24px;
-  }
-  
-  h1 {
-    margin: 0;
-    font-size: 24px;
-    color: #ff4500;
-  }
-  
-  .route-info {
-    margin: 20px 0;
-    padding: 10px;
-    background-color: #ffeb99;
-    border-radius: 10px;
-  }
-  
-  .route {
-    display: flex;
-    justify-content: space-between;
-    font-weight: bold;
-    color: #000;
-  }
-  
-  .city-info {
-    color: #ff4500;
-    margin: 5px 0;
-  }
-  
-  .date {
-    color: #ff4500;
-  }
-  
-  .bus-info {
-    margin-top: 20px;
-  }
-  
-  .bus-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #e0e0e0;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .bus-number {
-    font-weight: bold;
-  }
-  
-  .bus-details {
-    text-align: left;
-    font-size: 14px;
-  }
-  
-  .time {
-    display: block;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .destination {
-    color: #888;
-  }
-  
-  .arrow {
-    margin: 0 5px;
-  }
-  
-  .price {
-    font-weight: bold;
-    color: #ff4500;
-  }
-  
-  footer {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .bus-image {
-    width: 50%;
-  }
-  
-  .clock-icon {
-    font-size: 48px;
-    color: #ff4500;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(223, 94, 8, 0.5); 
+  background: transparent;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);/* Blue shade with transparency */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(209, 23, 23, 0.1);
+  text-align: center;
+  font-size:24px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ff0055;
+}
+
+.menu-icon {
+  font-size: 24px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  color: white; /* Change text color to white */
+}
+
+.route-info {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: rgba(255, 235, 153, 0.5); /* Slight transparency */
+  border-radius: 10px;
+}
+
+.route {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: white; /* Change text color to white */
+}
+
+.city-info {
+  color: white; /* Change text color to white */
+  margin: 5px 0;
+}
+
+.date {
+  color: white; /* Change text color to white */
+}
+
+.bus-info {
+  margin-top: 20px;
+}
+
+.bus-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(224, 224, 224, 0.5); /* Slight transparency */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bus-number {
+  font-weight: bold;
+  color: white; /* Change text color to white */
+}
+
+.bus-details {
+  text-align: left;
+  font-size: 18px;
+  color: white; /* Change text color to white */
+}
+
+.time {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: white; /* Change text color to white */
+}
+
+.destination {
+  color: rgba(255, 255, 255, 0.7); /* Slightly faded white for destination */
+}
+
+.arrow {
+  margin: 0 5px;
+}
+
+.price {
+  font-weight: bold;
+  color: #ff4500; /* Keep the price in red */
+}
+
+footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bus-image {
+  width: 15%;
+}
+
+.clock-icon {
+  font-size: 48px;
+  color: #ff4500;
+}

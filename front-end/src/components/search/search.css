@@ -5,12 +5,13 @@ body {
   
   .container {
     width: 300px;
-    margin: 0 auto;
+    margin-right:60%;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-left:100%;
   }
   
   header {
@@ -30,8 +31,9 @@ body {
   }
   
   h2 {
-    color: #ff4500;
+    color: #e6835f;
     margin: 20px 0;
+    font-size: 20px;;
   }
   
   .form-group {
