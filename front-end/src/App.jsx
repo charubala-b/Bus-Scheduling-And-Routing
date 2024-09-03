@@ -9,6 +9,9 @@ import AttendancePage from './components/AttendancePage/AttendancePage'; // Impo
  // Viewer component
 import BusList from './components/BusList/BusList';
 // Corrected component name
+import AdminLogin from './components/Admin/AdminLogin';
+import AdminDashboard from './components/Admin/AdminDashboard';
+import BusDetails from './components/BusDetails/BusDetails';
 
 
 const App = () => {
@@ -25,6 +28,12 @@ const App = () => {
 
         <Route path="/search" element={<Search />} /> 
         <Route path='/BusList' element={<BusList/>}/>
+
+        <Route path='/Admin' element={<AdminLogin/>}/>
+
+        <Route path='/AdminDashboard' element={<AdminDashboard/>}/>
+
+        <Route path='/BusDetails' element={<BusDetails/>}/>
 
       </Routes>
     </Router>

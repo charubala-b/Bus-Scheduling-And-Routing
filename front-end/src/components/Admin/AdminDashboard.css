@@ -1,0 +1,64 @@
+/* BusDetailsTable.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(250, 246, 243, 0.5);
+    backdrop-filter: blur(8px); 
+    margin: 0;
+    /* padding: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .table-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between the two tables */
+    align-items: flex-start; /* Align tables to the top */
+    width: 100%;
+    margin-top: 150px;
+  }
+  
+  .table-wrapper {
+    width: 45%; /* Each table takes up 45% of the width */
+  }
+  
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    text-align: center;
+    color: red;
+    margin-top: 20px;
+  }

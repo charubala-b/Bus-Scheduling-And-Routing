@@ -8,8 +8,10 @@ body {
     margin-right:60%;
     padding: 20px;
     background-color: #fff;
+    background-color: rgba(250, 246, 243, 0.5);
+    backdrop-filter: blur(8px); 
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0);
     text-align: center;
     margin-left:100%;
   }
@@ -31,7 +33,7 @@ body {
   }
   
   h2 {
-    color: #e6835f;
+    color: #f6efef;
     margin: 20px 0;
     font-size: 20px;;
   }

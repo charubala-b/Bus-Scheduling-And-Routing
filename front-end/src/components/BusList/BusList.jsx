@@ -8,9 +8,9 @@ function BusList() {
   const { from, to } = location.state || {}; // Get "from" and "to" values from state
   const [buses, setBuses] = useState([]); // State to store filtered buses
 
-  // Function to handle navigation to BusTracking
-  const handleBack = () => {
-    navigate('/BusTracking');
+  // Function to navigate to BusDetails
+  const handleBusClick = (bus) => {
+    navigate('/BusDetails', { state: { bus } });
   };
 
   // Fetch and filter buses based on "from" and "to" values
@@ -49,7 +49,7 @@ function BusList() {
       <div className="bus-info">
         {buses.length > 0 ? (
           buses.map((bus, index) => (
-            <div key={index} className="bus-card" onClick={handleBack}>
+            <div key={index} className="bus-card" onClick={() => handleBusClick(bus)}>
               <div className="bus-number">NO : {bus.busNumber}</div>
               <div className="bus-details">
                 <span className="time">Start: {bus.location.from}</span>
@@ -65,14 +65,6 @@ function BusList() {
         )}
       </div>
 
-      <footer>
-        <img 
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxYE-CNz1vgw7_nvRpI-mKSBVq9EIRrzfQJA&s" 
-          alt="Bus"
-          className="bus-image"
-        />
-        <div className="clock-icon">🕒</div>
-      </footer>
     </div>
   );
 }

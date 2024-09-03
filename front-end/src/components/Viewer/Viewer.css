@@ -3,27 +3,30 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: transparent; /* Transparent background, similar to the login page */
-    backdrop-filter: blur(30px); /* Blur effect to match the login page */
+    /* background: transparent;  */
+   /* Transparent background, similar to the login page */
+    /* backdrop-filter: blur(30px); Blur effect to match the login page */
   }
   
   .viewer-box {
     width: 420px;
     height: auto; /* Adjust height based on content */
     padding: 40px;
-    background: rgba(255, 255, 255, 0.1); /* Transparent white with blur effect */
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(30px); /* Add blur effect to the box */
+    background-color: rgba(250, 246, 243, 0.5);
+    backdrop-filter: blur(8px); 
+     /* Transparent white with blur effect */
+    border: 2px solid rgba(122, 82, 82, 0.1);
+    
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    color: #fff;
+    /* color: #fff; */
     text-align: center;
     transition: height 0.2s ease;
   }
   
-  h2 {
-    font-size: 36px;
-    color: white;
+  .charu {
+    font-size: 34px;
+    color: rgb(27, 21, 21);
     margin-bottom: 20px;
   }
   
@@ -35,7 +38,7 @@
     backdrop-filter: blur(30px); /* Add blur effect */
     border-radius: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: #fff;
+    color: #1e1616;
     font-size: 16px;
     font-weight: 700;
     margin: 20px 0;

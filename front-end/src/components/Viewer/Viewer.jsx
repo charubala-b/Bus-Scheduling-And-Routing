@@ -15,14 +15,17 @@ const Viewer = () => {
   const handleGovernmentClick = () => {
     navigate('/schedule'); // Navigates to the Schedule page
   };
+  const handleAdmin=()=>{
+    navigate('/Admin');
+  };
   
 
   return (
     <div className="viewer-container">
       <div className="viewer-box">
-        <h2>Select Your Role</h2>
+        <h2 className="charu">Select Your Role</h2>
         <button onClick={handleClick} className="role-option">User</button>
-        <button className="role-option">Admin</button>
+        <button className="role-option" onClick={handleAdmin}>Admin</button>
         <button className="role-option" onClick={handleGovernmentClick}>Government</button>
         <button className="back-button" onClick={handleBack}>Back to Login</button>
       </div>
